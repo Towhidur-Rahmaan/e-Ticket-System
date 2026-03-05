@@ -1,33 +1,39 @@
 const TicketList = ({ ticket }) => {
-  const { title, status, description, priority, customer } = ticket;
+  const { no, title, status, description, priority, customer } = ticket;
+
   const statusColors = {
     Open: "bg-green-500",
     "In-Progress": "bg-yellow-500",
   };
 
   const priorityColors = {
-    "HIGH PRIORITY": " text-red-500 ",
-    "MEDIUM PRIORITY": " text-yellow-500 ",
-    "LOW PRIORITY": " text-green-500",
+    "HIGH PRIORITY": "text-red-500",
+    "MEDIUM PRIORITY": "text-yellow-500",
+    "LOW PRIORITY": "text-green-500",
   };
+
   return (
-    <div className="bg-white  p-4 text-gray-600 rounded-xl">
+    <div className="bg-white p-4 text-gray-600 rounded-xl ">
       <div className="flex justify-between">
-        <h3>{ticket.title}</h3>
+        <h3>{title}</h3>
+
         <button
-          className={`px-3 py-1 rounded-full text-sm ${statusColors[ticket.status]}`}
+          className={`px-3 py-1 rounded-full text-sm ${statusColors[status]}`}
         >
-          {ticket.status}
+          {status}
         </button>
       </div>
-      <p>{ticket.description.slice(0, 40)}...</p>
+
+      <p>{description.slice(0, 40)}...</p>
 
       <div className="flex justify-between">
-        <p>{ticket.no}</p>
+        <p>{no}</p>
+
         <p className={`px-3 py-1 text-sm ${priorityColors[priority]}`}>
-          {ticket.priority}
+          {priority}
         </p>
-        <p>{ticket.customer}</p>
+
+        <p>{customer}</p>
       </div>
     </div>
   );
