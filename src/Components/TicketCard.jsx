@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Banner from "./Banner";
 import TicketList from "./TicketList";
 
@@ -14,18 +16,25 @@ const TicketCard = () => {
   }, []);
 
   const handleAdd = (ticket) => {
-    if (inProgress.find((t) => t.id === ticket.id)) return;
-    setInProgress([...inProgress, ticket]);
-  };
+    if (inProgress.find((t) => t.id === ticket.id)) {
+      toast.warning("Ticket already added!");
+      return;
+    }
 
+    setInProgress([...inProgress, ticket]);
+    toast.success("Ticket added to Task Status ✅");
+  };
   const handleComplete = (ticket) => {
     setInProgress(inProgress.filter((t) => t.id !== ticket.id));
     setResolved([...resolved, ticket]);
     setTickets(tickets.filter((t) => t.id !== ticket.id));
+
+    toast.info("Task resolved successfully 🎉");
   };
 
   return (
     <div className="max-w-7xl mx-auto">
+      <ToastContainer position="top-right" autoClose={2000} />
       <Banner
         inProgressCount={inProgress.length}
         resolvedCount={resolved.length}
