@@ -33,7 +33,7 @@ const Footer = () => {
           <h6 className="footer-title">Information</h6>
           <a className="link link-hover">Privacy Policy</a>
           <a className="link link-hover">Terms And Conditions</a>
-          <a className="link link-hover">Join Us</a>
+          <a className="link link-hover">Join Us.</a>
         </nav>
         <nav className="">
           <h6 className="footer-title">Social Links</h6>
