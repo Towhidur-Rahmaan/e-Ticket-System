@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "title": "Login Issues - Can't Access Account",
+    "description": "Customer is unable to log in even after resetting password multiple times.",
+    "customer": "John Smith",
+    "no": "#1001",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "2026-03-01"
+  },
+  {
+    "id": 2,
+    "title": "Payment Failed - Card Declined",
+    "description": "Customer attempted payment but transaction was declined.",
+    "customer": "Sarah Johnson",
+    "no": "#1002",
+    "priority": "HIGH PRIORITY",
+    "status": "In-Progress",
+    "createdAt": "2026-03-02"
+  },
+  {
+    "id": 3,
+    "title": "Unable to Download Invoice",
+    "description": "Invoice download button is not responding from billing section.",
+    "customer": "Michael Brown",
+    "no": "#1003",
+    "priority": "MEDIUM PRIORITY",
+    "status": "Open",
+    "createdAt": "2026-03-03"
+  },
+  {
+    "id": 4,
+    "title": "Incorrect Billing Address",
+    "description": "Updated billing address is not reflecting correctly in profile.",
+    "customer": "Emily Davis",
+    "no": "#1004",
+    "priority": "LOW PRIORITY",
+    "status": "In-Progress",
+    "createdAt": "2026-03-04"
+  },
+  {
+    "id": 5,
+    "title": "App Crash on Launch",
+    "description": "Mobile app crashes immediately after opening on Android 13.",
+    "customer": "David Wilson",
+    "no": "#1005",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "2026-03-05"
+  },
+  {
+    "id": 6,
+    "title": "Refund Not Processed",
+    "description": "Refund was requested two weeks ago but not received yet.",
+    "customer": "Sophia Taylor",
+    "no": "#1006",
+    "priority": "MEDIUM PRIORITY",
+    "status": "Open",
+    "createdAt": "2026-03-06"
+  },
+  {
+    "id": 7,
+    "title": "Two-Factor Authentication Issue",
+    "description": "User not receiving OTP for 2FA verification.",
+    "customer": "James Anderson",
+    "no": "#1007",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "2026-03-07"
+  },
+  {
+    "id": 8,
+    "title": "Profile Picture Not Updating",
+    "description": "New profile image upload shows error and does not save.",
+    "customer": "Olivia Martinez",
+    "no": "#1008",
+    "priority": "LOW PRIORITY",
+    "status": "In-Progress",
+    "createdAt": "2026-03-08"
+  },
+  {
+    "id": 9,
+    "title": "Subscription Auto-Renewal Problem",
+    "description": "Subscription renewed without confirmation email.",
+    "customer": "Daniel Thomas",
+    "no": "#1009",
+    "priority": "MEDIUM PRIORITY",
+    "status": "In-Progress",
+    "createdAt": "2026-03-09"
+  },
+  {
+    "id": 10,
+    "title": "Email Notifications Not Working",
+    "description": "User is not receiving important system notifications.",
+    "customer": "Isabella Moore",
+    "no": "#1010",
+    "priority": "MEDIUM PRIORITY",
+    "status": "Open",
+    "createdAt": "2026-03-10"
+  },
+  {
+    "id": 11,
+    "title": "Dashboard Loading Slowly",
+    "description": "Dashboard takes more than 20 seconds to fully load.",
+    "customer": "William Jackson",
+    "no": "#1011",
+    "priority": "LOW PRIORITY",
+    "status": "Open",
+    "createdAt": "2026-03-11"
+  },
+  {
+    "id": 12,
+    "title": "Password Reset Email Not Received",
+    "description": "Customer requested password reset but email never arrived.",
+    "customer": "Mia White",
+    "no": "#1012",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "2026-03-12"
+  },
+  {
+    "id": 13,
+    "title": "Order History Missing",
+    "description": "Previous purchase history not visible in account.",
+    "customer": "Ethan Harris",
+    "no": "#1013",
+    "priority": "MEDIUM PRIORITY",
+    "status": "Open",
+    "createdAt": "2026-03-13"
+  },
+  {
+    "id": 14,
+    "title": "Dark Mode Not Saving",
+    "description": "Theme switches back to light mode after refresh.",
+    "customer": "Charlotte Clark",
+    "no": "#1014",
+    "priority": "LOW PRIORITY",
+    "status": "Open",
+    "createdAt": "2026-03-14"
+  },
+  {
+    "id": 15,
+    "title": "Error 500 on Checkout",
+    "description": "Server error appears when attempting to complete checkout.",
+    "customer": "Liam Lewis",
+    "no": "#1015",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "2026-03-15"
+  }
+]
