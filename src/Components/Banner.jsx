@@ -2,7 +2,7 @@ import banner1 from "../assets/vector1.png";
 
 function Banner({ inProgressCount, resolvedCount }) {
   return (
-    <div className="grid grid-cols-2 max-w-7xl mx-auto gap-4  min-h-35 ">
+    <div className="grid grid-cols-2 max-w-7xl mx-auto gap-10  min-h-40 mt-10">
       <div className="relative overflow-hidden bg-linear-to-r from-purple-500 to-indigo-500 text-white p-10 text-center  rounded-xl">
         <img
           src={banner1}

@@ -1,4 +1,5 @@
 import "./App.css";
+import Footer from "./Components/Footer";
 import NavBar from "./Components/NavBar";
 import TicketCard from "./Components/TicketCard";
 
@@ -10,6 +11,7 @@ function App() {
       <NavBar></NavBar>
 
       <TicketCard></TicketCard>
+      <Footer></Footer>
     </>
   );
 }

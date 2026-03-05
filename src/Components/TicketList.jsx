@@ -11,7 +11,7 @@ const TicketList = ({ ticket }) => {
     "LOW PRIORITY": " text-green-500",
   };
   return (
-    <div className="bg-white  p-4 text-gray-600">
+    <div className="bg-white  p-4 text-gray-600 rounded-xl">
       <div className="flex justify-between">
         <h3>{ticket.title}</h3>
         <button
@@ -20,7 +20,7 @@ const TicketList = ({ ticket }) => {
           {ticket.status}
         </button>
       </div>
-      <p>{ticket.description}</p>
+      <p>{ticket.description.slice(0, 40)}...</p>
 
       <div className="flex justify-between">
         <p>{ticket.no}</p>

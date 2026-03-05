@@ -31,9 +31,8 @@ const TicketCard = () => {
         resolvedCount={resolved.length}
       />
 
-      <div className="flex gap-8 mt-8">
-        {/* LEFT SIDE */}
-        <div className="w-2/3 grid md:grid-cols-2 gap-6">
+      <div className="flex gap-8 mt-8 ">
+        <div className="w-3/4 grid md:grid-cols-2 gap-6 ">
           {tickets.map((ticket) => (
             <div
               key={ticket.id}
@@ -45,7 +44,6 @@ const TicketCard = () => {
           ))}
         </div>
 
-        {/* RIGHT SIDE */}
         <div className="w-1/3 p-4 ">
           <h2 className="font-bold text-2xl mb-4">Task Status</h2>
 
@@ -54,7 +52,7 @@ const TicketCard = () => {
               key={task.id}
               className="bg-white p-3  shadow mb-2 text-black rounded-xl"
             >
-              <p>{task.title}</p>
+              <p className="font-semibold">{task.title}</p>
               <button
                 onClick={() => handleComplete(task)}
                 className="mt-2 w-full bg-green-600 text-white px-3 py-1 rounded font-bold"
@@ -64,12 +62,12 @@ const TicketCard = () => {
             </div>
           ))}
 
-          <h2 className="font-bold mt-6 mb-2">Resolved</h2>
+          <h2 className="font-bold mt-6 mb-2 text-2xl ">Resolved Task</h2>
 
           {resolved.map((task) => (
             <div
               key={task.id}
-              className="bg-gray-200 p-2 rounded mb-2 text-black"
+              className="bg-blue-200 p-4 rounded  text-black font-semibold mb-2"
             >
               {task.title}
             </div>
